@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Dreamer Travels</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <img src="./1728918738628-19117.png" alt="Brand Logo">
+      <span>Dreamer Travels</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Book</a></li>
+      <li class="dropdown">
+        <a href="#">Packages</a>
+        <ul class="dropdown-content">
+          <li><a href="#">United States</a></li>
+          <li><a href="#">India</a></li>
+          <li><a href="#">France</a></li>
+          <li><a href="#">Germany</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">About</a></li>
+      <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
+        Register
+      </button></li>
+      <li><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#loginModal">
+        Login
+      </button>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Dreamer Travels</h2>
+      <h1>Visit <span id="place">USA</span></h1>
+      <button class="btn-hero">Book Now</button> 
+    </div>
+  </section>
+  <section class="booking-section">
+    <div class="row">
+        <div class="left">
+            <img src="./1728918738628-19117.png" alt="Brand Image">
+        </div>
+
+        <div class="right">
+            <form id="booking-form">
+                <label for="destination">Where to:</label>
+                <select id="destination" name="destination">
+                    <option value="paris">Paris</option>
+                    <option value="newyork">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+
+                <label for="persons">How Many Persons:</label>
+                <input type="number" id="persons" name="persons" min="1" max="10">
+
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" minlength="50" maxlength="500"></textarea>
+
+                <button type="submit" class="btn-book">Book Now</button> 
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="packages">
+    <h2>Our Travel Packages</h2>
+    <div class="row">
+      
+        <div class="card">
+            <img src="./istockphoto-1345426734-612x612.jpg" alt="Paris">
+            <h3>Paris</h3>
+            <p>Visit the Eiffel Tower, Louvre Museum, and more!</p>
+            <p>Price: $1000</p>
+            <p>Rating: 4.8</p>
+            <button class="btn">Book Now</button>
+        </div>
+
+      
+        <div class="card">
+            <img src="./Statue-of-Liberty-Island-New-York-Bay.webp" alt="New York">
+            <h3>New York</h3>
+            <p>Explore Times Square, Central Park, and more!</p>
+            <p>Price: $1200</p>
+            <p>Rating: 4.7</p>
+            <button class="btn">Book Now</button>
+        </div>
+
+      
+        <div class="card">
+            <img src="./photo-1540959733332-eab4deabeeaf.jpg" alt="Tokyo">
+            <h3>Tokyo</h3>
+            <p>Discover the beauty of Tokyo's temples and city life!</p>
+            <p>Price: $1500</p>
+            <p>Rating: 4.9</p>
+            <button class="btn">Book Now</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Affordable Hotels</li>
+        <li>Food & Drinks</li>
+        <li>Safety Guide</li>
+        <li>Transportation Services</li>
+        <li>Local Tour Guides</li>
+    </ul>
+</section>
+
+<section class="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-container">
+    <div class="gallery-item"><img src="./1447620a-scaled.jpg" alt="Gallery Image 1"></div>
+    <div class="gallery-item"><img src="./595949a-scaled.jpg" alt="Gallery Image 2"></div>
+    <div class="gallery-item"><img src="./anders-jilden-cYrMQA7a3Wc-unsplash.jpg" alt="Gallery Image 3"></div>
+   
+  </div>
+</section>
+
+
+<section class="about-us">
+  <div class="about-us-row">
+    <div class="about-us-image">
+      <img src="./1728918738628-19117.png" alt="About Us Image">
+    </div>
+    <div class="about-us-info">
+      <h2>About Dreamer Travels</h2>
+      <p>Welcome to Dreamer Travels, where your journey is our passion! We are dedicated to crafting memorable travel experiences that inspire and delight. Our mission is to help you explore the world with ease, whether it's your first adventure or you're a seasoned traveler seeking new horizons.</p>
+
+    <p>  With a focus on personalized service, Dreamer Travels offers carefully curated itineraries and seamless planning for every trip. From tropical getaways and cultural excursions to adventurous escapes and luxury retreats, we take care of every detail, so all you have to do is relax and enjoy the journey.</p>
+        
+      <p> Our team is passionate about travel and committed to providing exceptional service, innovative solutions, and insider tips to make your experience unforgettable. At Dreamer Travels, we believe in the transformative power of travel and aim to connect you with destinations and experiences that leave lasting memories.</p>
+        
+       <p> Join us on a journey of a lifetime. With Dreamer Travels, your dreams are just a destination away.</p>
+     
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <p>Dreamer Travels</p>
+  <div class="social-icons">
+    <a href="#"><img src="/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="./facebook.png" alt="Facebook"></a>
+  
+  </div>
+  <p>&copy; 2024 Dreamer Travels. All Rights Reserved.</p>
+</footer>
+<!-- Register Button -->
+
+
+<!-- Login Button -->
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="registerForm" onsubmit="return validateRegisterForm()">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" id="fullname" required>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact</label>
+            <input type="text" class="form-control" id="contact" required>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select class="form-control" id="gender" required>
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm" onsubmit="return validateLoginForm()">
+          <div class="form-group">
+            <label for="loginEmail">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+          <button type="submit" class="btn btn-secondary">Login</button>
+        </form>
+        <p>Don’t have an account? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
